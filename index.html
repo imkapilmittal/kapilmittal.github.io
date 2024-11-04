@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAPIL MITTAL</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            background-color: #282c34;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .moving-text {
+            position: relative;
+            font-size: 48px;
+            white-space: nowrap;
+            animation: move 10s linear infinite;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateX(100%);
+                color: #ff5733;
+                font-family: 'Arial', sans-serif;
+            }
+            25% {
+                color: #33ff57;
+                font-family: 'Courier New', monospace;
+            }
+            50% {
+                transform: translateX(-100%);
+                color: #3357ff;
+                font-family: 'Georgia', serif;
+            }
+            75% {
+                color: #ff33a1;
+                font-family: 'Verdana', sans-serif;
+            }
+            100% {
+                transform: translateX(100%);
+                color: #ff5733;
+                font-family: 'Arial', sans-serif;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="moving-text">KAPIL MITTAL</div>
+</body>
+</html>
