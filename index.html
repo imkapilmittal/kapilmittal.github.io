@@ -3,54 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KAPIL MITTAL</title>
+    <title>You are here too early!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMU1fM6sR+4F5a1eV9Uu5jX1X5XhGx5Fc6wFZp" crossorigin="anonymous">
     <style>
         body {
+            font-family: Arial, sans-serif;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            overflow: hidden;
-            background-color: #282c34;
+            margin: 0;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
             color: white;
-            font-family: Arial, sans-serif;
         }
-
-        .moving-text {
-            position: relative;
-            font-size: 48px;
-            white-space: nowrap;
-            animation: move 10s linear infinite;
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
         }
-
-        @keyframes move {
-            0% {
-                transform: translateX(100%);
-                color: #ff5733;
-                font-family: 'Arial', sans-serif;
-            }
-            25% {
-                color: #33ff57;
-                font-family: 'Courier New', monospace;
-            }
-            50% {
-                transform: translateX(-100%);
-                color: #3357ff;
-                font-family: 'Georgia', serif;
-            }
-            75% {
-                color: #ff33a1;
-                font-family: 'Verdana', sans-serif;
-            }
-            100% {
-                transform: translateX(100%);
-                color: #ff5733;
-                font-family: 'Arial', sans-serif;
-            }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 20px;
+            margin: 5px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        a:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+        .icon {
+            margin-right: 8px;
         }
     </style>
 </head>
 <body>
-    <div class="moving-text">KAPIL MITTAL</div>
+    <div class="container">
+        <h1>You are here too early!</h1>
+        <p>You might be someone Special.</p>
+	<p>Still, I got something for you below:</p>
+        <a href="https://www.facebook.com/Imkapilmittal" target="_blank"><i class="fab fa-facebook icon"></i> Facebook</a>
+        <a href="https://twitter.com/imkapilmittal" target="_blank"><i class="fab fa-twitter icon"></i> Twitter</a>
+        <a href="https://www.instagram.com/Imkapilmittal/" target="_blank"><i class="fab fa-instagram icon"></i> Instagram</a>
+            </div>
 </body>
 </html>
